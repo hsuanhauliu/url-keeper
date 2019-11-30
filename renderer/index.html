@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reading List</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet", href="style.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row m-3">
+            <div class="col-12 header">
+                <p class="text-center h2">Reading List</p>
+            </div>
+        </div>
+
+        <!-- Options -->
+        <div class="row m-3">
+            <div class="col-12 text-center">
+                <form id="url_form">
+                    <input type="url" id="newUrl" class="w-100 m-1" placeholder="Enter URL" required>
+                    <input type="text" id="newTitle" class="w-100 m-1" placeholder="Enter Title (optional)">
+                    <button type="submit" class="btn-danger">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Content -->
+        <div id="read_list"></div>
+                    
+    </div>
+  </body>
+</html>

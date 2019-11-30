@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke;
+    font: caption;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    height: 50;
+    font-family: "Brush Script MT", cursive;
+}
+
+.read-complete {
+    text-align: center;
+    background-color: palevioletred;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item-title {
+    overflow-wrap: break-word;
+}
