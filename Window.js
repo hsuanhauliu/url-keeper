@@ -17,7 +17,7 @@ class Window extends BrowserWindow {
 
         // and load the index.html of the app.
         this.loadFile(file)
-        this.webContents.openDevTools()
+        //this.webContents.openDevTools()
 
         this.once('ready-to-show', () => {
             this.show()
